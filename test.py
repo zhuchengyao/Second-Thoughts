@@ -19,9 +19,7 @@ def get_ETH_contract_price():
 
 
 if __name__ == '__main__':
-    api_key = "c15acbfa-e015-4547-b05b-51cd77514f15"
-    secret_key = "528DA648FA63D015792CE35E84B464C7"
-    passphrase = "faLL2012$"
+
 
     flag = '0'  # 实盘 real trading
     accountAPI = Account.AccountAPI(api_key, secret_key, passphrase, False, flag)

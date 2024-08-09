@@ -9,9 +9,7 @@ import json
 
 
 if __name__ == '__main__':
-    api_key = "c15acbfa-e015-4547-b05b-51cd77514f15"
-    secret_key = "528DA648FA63D015792CE35E84B464C7"
-    passphrase = "faLL2012$"
+
     # flag是实盘与模拟盘的切换参数 flag is the key parameter which can help you to change between demo and real trading.
     flag = '0'  # 模拟盘 demo trading
     # flag = '0'  # 实盘 real trading
