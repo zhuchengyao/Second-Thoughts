@@ -144,9 +144,7 @@ def grid_strategy(_ccy="ETH"):
 
 
 if __name__ == '__main__':
-    api_key = "c15acbfa-e015-4547-b05b-51cd77514f15"
-    secret_key = "528DA648FA63D015792CE35E84B464C7"
-    passphrase = "faLL2012$"
+
 
     ccy = "ETH"
 
