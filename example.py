@@ -9,17 +9,17 @@ import json
 
 
 if __name__ == '__main__':
-    api_key = ""
-    secret_key = ""
-    passphrase = ""
+    api_key = "c15acbfa-e015-4547-b05b-51cd77514f15"
+    secret_key = "528DA648FA63D015792CE35E84B464C7"
+    passphrase = "faLL2012$"
     # flag是实盘与模拟盘的切换参数 flag is the key parameter which can help you to change between demo and real trading.
-    # flag = '1'  # 模拟盘 demo trading
-    flag = '0'  # 实盘 real trading
+    flag = '0'  # 模拟盘 demo trading
+    # flag = '0'  # 实盘 real trading
 
     # account api
     accountAPI = Account.AccountAPI(api_key, secret_key, passphrase, False, flag)
     # 查看账户持仓风险 GET Position_risk
-    # result = accountAPI.get_position_risk('SWAP')
+    result = accountAPI.get_position_risk('SWAP')
     # 查看账户余额  Get Balance
     # result = accountAPI.get_account()
     # 查看持仓信息  Get Positions
@@ -204,4 +204,4 @@ if __name__ == '__main__':
     Status = Status.StatusAPI(api_key, secret_key, passphrase, False, flag)
     # 查看系统的升级状态
     # result = Status.status()
-    print(json.dumps(result))
+    print(result)
